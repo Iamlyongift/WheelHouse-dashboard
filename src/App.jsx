@@ -7,7 +7,7 @@ import {
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
 import Header from "./components/Header";
-import AdminLogin from "./components/adminlogin";
+
 import "./App.css";
 import UserList from "./components/UserList";
 import ProductList from "./components/ProductList";
@@ -18,6 +18,7 @@ import Messages from "./components/Messages";
 import ProductDetails from "./components/ProductDetails";
 import CarList from "./components/CarList";
 import HouseList from "./components/HouseList";
+import AdminLogin from "./components/adminlogin";
 
 function App() {
   // Use useLocation to detect the current path
