@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .product-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+  }
+  
+  .product-details-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .product-details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .product-details-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .product-details-image {
+    width: 100%;
+    height: auto;
+    /* max-width: 300px; */
+    margin: 20px 0;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-details-footer {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .product-details-footer button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-details-footer button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  
+
+
+
+
+
+
+
+  .product-details {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-details h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .image-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .image-slider img {
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-slider button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: #333;
+  }
+  
+  .image-slider button:hover {
+    color: #007bff;
+  }
+  
+  .image-slider button:nth-child(1) {
+    left: 10px;
+  }
+  
+  .image-slider button:nth-child(3) {
+    right: 10px;
+  }
+  

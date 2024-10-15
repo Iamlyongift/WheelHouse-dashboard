@@ -1,0 +1,49 @@
+.dashboard {
+   /* Adjust to your sidebar width */
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 80vh; /* Ensure it covers the entire viewport height */
+    width: 100% /* Take up the rest of the space after the sidebar */;
+    box-sizing: border-box;
+  }
+  
+  .dashboard h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  
+  /* General card styling for dashboard items */
+  .dashboard-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%; /* Ensure it takes the full width of the container */
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .card:hover {
+    background-color: #eaeaea;
+    transform: translateY(-5px);
+  }
+  
+  .card a:hover {
+    color: #21412a;
+  }
+  

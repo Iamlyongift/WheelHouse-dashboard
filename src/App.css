@@ -1,0 +1,66 @@
+.app {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #153D21;
+    color: white;
+    padding: 20px;
+    height: auto;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+  }
+  
+  .logout-btn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FF4C4C;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+   
+  }
+  
+  .dashboard {
+    text-align: center;
+  }
+  
+  .dashboard-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #EEE;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
