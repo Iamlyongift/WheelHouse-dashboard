@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../css/login.css";
 
@@ -10,12 +10,7 @@ const AdminLogin = () => {
   const navigate = useNavigate(); // Hook to redirect after login
 
 
-  const handleLogout = () => {
-    localStorage.removeItem("token"); // Remove token from localStorage
-    setIsLoggedIn(false); // Update state
-    navigate("/login"); // Navigate to login page
-    setIsMenuOpen(false); // Close the menu after logout
-  };
+
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent form from refreshing the page
@@ -43,7 +38,7 @@ const AdminLogin = () => {
         setError(data.message || "Login failed. Please try again.");
       }
     } catch (error) {
-      setError("An error occurred. Please try again later.");
+      setError("An error occurred. Please try again later.", error);
     }
   };
 
