@@ -19,8 +19,7 @@ import ProductDetails from "./components/ProductDetails";
 import CarList from "./components/CarList";
 import HouseList from "./components/HouseList";
 import AdminLogin from "./components/Login";
-
-
+import AdminRegisterForm from "./components/AdminRegisterForm";
 
 function App() {
   // Use useLocation to detect the current path
@@ -34,6 +33,7 @@ function App() {
         {/* Only render Dashboard when on the home page (/) */}
         {location.pathname === "/" && <Dashboard />}
         <Routes>
+          <Route path="/register" element={<AdminRegisterForm />} />
           <Route path="/login" element={<AdminLogin />} />
           <Route
             path="userlist"
@@ -83,7 +83,7 @@ function App() {
               </PrivateRoute>
             }
           />
-            <Route
+          <Route
             path="/carlist"
             element={
               <PrivateRoute>
@@ -91,7 +91,7 @@ function App() {
               </PrivateRoute>
             }
           />
-           <Route
+          <Route
             path="/houselist"
             element={
               <PrivateRoute>

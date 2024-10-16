@@ -13,7 +13,7 @@ export default function AdminLogin() {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent form from refreshing the page
 
-    const baseUrl = "http://localhost:2025";
+    const baseUrl = "https://wheelhouse.onrender.com";
     try {
       const response = await fetch(`${baseUrl}/admin/adminLogin`, {
         method: "POST",

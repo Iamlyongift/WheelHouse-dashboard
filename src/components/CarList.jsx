@@ -14,7 +14,7 @@ const CarList = () => {
   // Fetch cars when the component mounts
   useEffect(() => {
     const fetchCars = async () => {
-      const baseURL = "http://localhost:2025";
+      const baseURL = "https://wheelhouse.onrender.com";
       try {
         const token = localStorage.getItem("token");
 

@@ -5,8 +5,7 @@ const CategoryList = () => {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
-  const baseUrl = "http://localhost:2025"; // Set the base URL once
+  const baseUrl = "https://wheelhouse.onrender.com"; // Set the base URL once
 
   // Fetch categories when the component mounts
   useEffect(() => {

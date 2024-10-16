@@ -35,6 +35,9 @@ const Sidebar = () => {
         <Link to="/">
           <li>Update Product</li>
         </Link>
+        <Link to="/register">
+        <li>register</li>
+        </Link>
       </ul>
    
     </div>

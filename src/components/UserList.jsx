@@ -11,7 +11,7 @@ const UserList = () => {
 
   useEffect(() => {
     const fetchUsers = async (page) => {
-      const baseURl = "http://localhost:2025";
+      const baseURl = "https://wheelhouse.onrender.com";
       try {
         const token = localStorage.getItem("token");
 
@@ -50,7 +50,7 @@ const UserList = () => {
 
   // Function to toggle user status
   const toggleUserStatus = async (userID, currentStatus) => {
-    const baseURl = "http://localhost:2025";
+    const baseURl = "https://wheelhouse.onrender.com";
     try {
       const token = localStorage.getItem("token");
 

@@ -14,7 +14,7 @@ const CreateCategoryAndProduct = () => {
   const [productStock, setProductStock] = useState("");
   const [productImages, setProductImages] = useState([]);
   const [error, setError] = useState(null);
-  const baseUrl = "http://localhost:2025";
+  const baseUrl = "https://wheelhouse.onrender.com";
 
   useEffect(() => {
     const token = localStorage.getItem("token");

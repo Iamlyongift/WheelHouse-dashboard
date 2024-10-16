@@ -6,7 +6,7 @@ const Messages = () => {
 
   useEffect(() => {
     const fetchMessages = async () => {
-      const baseUrl = "http://localhost:2025";
+      const baseUrl = "https://wheelhouse.onrender.com";
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(`${baseUrl}/product/contact/messages`, {

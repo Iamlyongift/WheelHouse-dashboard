@@ -15,7 +15,7 @@ const ProductList = () => {
   // Fetch products when the component mounts
   useEffect(() => {
     const fetchProducts = async () => {
-      const baseURL = "http://localhost:2025";
+      const baseURL = "https://wheelhouse.onrender.com";
       try {
         const token = localStorage.getItem("token");
 

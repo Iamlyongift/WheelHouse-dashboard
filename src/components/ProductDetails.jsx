@@ -11,7 +11,7 @@ const ProductDetails = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   useEffect(() => {
     const fetchProductDetails = async () => {
-      const baseURL = "http://localhost:2025";
+      const baseURL = "https://wheelhouse.onrender.com";
       try {
         const token = localStorage.getItem("token");
 
