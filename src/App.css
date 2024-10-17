@@ -72,4 +72,19 @@
     padding: 20px;
     height: auto;
   }
+
+  .card {
+    background-color: #EEE;
+    padding: 20px;
+    margin: 10px;
+    width: auto;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    border-radius: 5px;
+  }
+  
 }

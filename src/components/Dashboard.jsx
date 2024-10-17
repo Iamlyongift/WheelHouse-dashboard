@@ -77,13 +77,13 @@ const Dashboard = () => {
           <Link to="/userlist">All Users: {userCount}</Link>
         </div>
         <div className="card">
-          <Link to="/messages">Messages: {feedbackCount}</Link>
+          <Link to="/messages">All Messages: {feedbackCount}</Link>
         </div>
         <div className="card">
-          <Link to="/productlist">Total Products: {productCount}</Link>
+          <Link to="/productlist">All Products: {productCount}</Link>
         </div>
         <div className="card">
-          <Link to="/categorylist">Categories: {categoryCount}</Link>
+          <Link to="/categorylist">All Categories: {categoryCount}</Link>
         </div>
         <div className="card">
           <Link>Create an Announcement</Link>
