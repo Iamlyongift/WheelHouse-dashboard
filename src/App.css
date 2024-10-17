@@ -29,7 +29,7 @@
   }
   
   .main-content {
-    width: 80%;
+    width: 100%;
     padding: 20px;
   }
   
@@ -64,3 +64,12 @@
     border-radius: 5px;
   }
   
+  @media (max-width: 768px) {
+  .sidebar {
+    width: 50%;
+    background-color: #153D21;
+    color: white;
+    padding: 20px;
+    height: auto;
+  }
+}

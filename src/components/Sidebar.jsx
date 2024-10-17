@@ -20,31 +20,31 @@ const Sidebar = () => {
        
         <ul>
           
-          <Link to="/">
+          <Link  to="/" className="side-link">
             <li>Admin dashboard</li>
           </Link>
-          <Link to="/userlist">
+          <Link to="/userlist" className="side-link">
             <li>Users</li>
           </Link>
-          <Link to="/createproduct">
+          <Link to="/createproduct" className="side-link">
             <li>Create Products</li>
           </Link>
-          <Link to="/categorylist">
+          <Link to="/categorylist" className="side-link">
             <li>Categories</li>
           </Link>
-          <Link to="/productlist">
+          <Link to="/productlist" className="side-link">
             <li>Total Products</li>
           </Link>
-          <Link to="/houselist">
+          <Link to="/houselist" className="side-link">
             <li>Houses</li>
           </Link>
-          <Link to="/carlist">
+          <Link to="/carlist" className="side-link">
             <li>Cars</li>
           </Link>
-          <Link to="/">
+          <Link to="/" className="side-link">
             <li>Update Product</li>
           </Link>
-          <Link to="/register">
+          <Link to="/register" className="side-link">
             <li>register</li>
           </Link>
         </ul>

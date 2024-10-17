@@ -57,7 +57,7 @@ margin-left: 300px;
       }
       .dashboard-items {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(90px, 2fr));
+        grid-template-columns: repeat(2, 2fr);
         gap: 20px;
         width: 100%; /* Ensure it takes the full width of the container */
       }

@@ -52,6 +52,10 @@
   list-style-type: none;
   padding: 0;
 }
+.side-link{
+  text-decoration: none;
+  color: #fff;
+}
 
 .sidebar ul li {
   padding: 15px 0;
@@ -104,8 +108,8 @@
 
   .sidebar {
     position: fixed;
-    width: 100%;
-    height: 100vh;
+    width: auto;
+    height: auto;
     left: -100%;
     transition: all 0.3s ease;
     background-color: #333;
@@ -121,6 +125,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin-top: 2.5rem;
   }
 
   .sidebar ul li {
