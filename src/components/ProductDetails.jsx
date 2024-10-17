@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../css/ProductDetails.css";
+import Spinner from "./Spinner";
 
 
 const ProductDetails = () => {
@@ -37,8 +38,9 @@ const ProductDetails = () => {
   }, [id]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Spinner />;
   }
+
 
   if (error) {
     return <p>Error: {error}</p>;

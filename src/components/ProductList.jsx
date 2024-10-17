@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/ProductList.css";
 import { MdDelete } from "react-icons/md";
+import Spinner from "./Spinner";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -42,7 +43,7 @@ const ProductList = () => {
 
   // Function to delete a product
   const handleDelete = async (id) => {
-    const baseURL = "http://localhost:2025";
+    const baseURL = "https://wheelhouse.onrender.com";
     try {
       const token = localStorage.getItem("token");
 
@@ -92,8 +93,9 @@ const ProductList = () => {
   const totalPages = Math.ceil(products.length / productsPerPage);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Spinner />;
   }
+
 
   if (error) {
     return <p>Error: {error}</p>;

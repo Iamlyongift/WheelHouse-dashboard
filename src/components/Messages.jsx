@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Spinner from "./Spinner";
 
 const Messages = () => {
   const [messages, setMessages] = useState([]);
@@ -39,8 +40,9 @@ const Messages = () => {
   console.log("Loading status:", loading); // Log the loading status
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Spinner />;
   }
+
 
   return (
     <div>

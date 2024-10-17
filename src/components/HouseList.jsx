@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/ProductList.css";
+import Spinner from "./Spinner";
 // import { MdDelete } from "react-icons/md";
 
 const HouseList = () => {
@@ -11,7 +12,7 @@ const HouseList = () => {
   // Fetch houses when the component mounts
   useEffect(() => {
     const fetchHouses = async () => {
-      const baseURL = "http://localhost:2025";
+      const baseURL = "https://wheelhouse.onrender.com";
       try {
         const token = localStorage.getItem("token");
 
@@ -50,8 +51,9 @@ const HouseList = () => {
   const descriptionLimit = 30;
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Spinner />;
   }
+
 
   if (error) {
     return <p>Error: {error}</p>;

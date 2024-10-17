@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
+import Spinner from "./Spinner"; // Import the Spinner component
 import "../css/UserList.css";
 
 const UserList = () => {
   const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); // Loading state for spinner
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1); // Track total pages
@@ -11,7 +12,7 @@ const UserList = () => {
 
   useEffect(() => {
     const fetchUsers = async (page) => {
-      const baseURl = "https://wheelhouse.onrender.com";
+      const baseURL = "https://wheelhouse.onrender.com";
       try {
         const token = localStorage.getItem("token");
 
@@ -20,7 +21,7 @@ const UserList = () => {
         }
 
         const response = await fetch(
-          `${baseURl}/admin/users?page=${page}&limit=${limit}`, // Add pagination query parameters
+          `${baseURL}/admin/users?page=${page}&limit=${limit}`, // Add pagination query parameters
           {
             method: "GET",
             headers: {
@@ -50,12 +51,12 @@ const UserList = () => {
 
   // Function to toggle user status
   const toggleUserStatus = async (userID, currentStatus) => {
-    const baseURl = "https://wheelhouse.onrender.com";
+    const baseURL = "https://wheelhouse.onrender.com";
     try {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `${baseURl}/admin/users/${userID}/toggle-status`,
+        `${baseURL}/admin/users/${userID}/toggle-status`,
         {
           method: "PATCH",
           headers: {
@@ -75,7 +76,7 @@ const UserList = () => {
       // Update user list with the new status
       setUsers((prevUsers) =>
         prevUsers.map((user) =>
-          user.id === userID ? { ...user, isActive: !currentStatus } : user
+          user._id === userID ? { ...user, isActive: !currentStatus } : user
         )
       );
     } catch (error) {
@@ -84,8 +85,9 @@ const UserList = () => {
     }
   };
 
+  // Spinner during loading
   if (loading) {
-    return <p>Loading...</p>;
+    return <Spinner />;
   }
 
   if (error) {
@@ -116,7 +118,7 @@ const UserList = () => {
         <tbody>
           {Array.isArray(users) &&
             users.map((user) => (
-              <tr key={user.id}>
+              <tr key={user._id}>
                 <td>{user._id}</td>
                 <td>{user.email}</td>
                 <td>{user.role}</td>
@@ -125,7 +127,7 @@ const UserList = () => {
                 <td>
                   {/* Add a toggle button for each user */}
                   <button
-                    onClick={() => toggleUserStatus(user.id, user.isActive)}
+                    onClick={() => toggleUserStatus(user._id, user.isActive)}
                   >
                     {user.isActive ? "Deactivate" : "Activate"}
                   </button>
