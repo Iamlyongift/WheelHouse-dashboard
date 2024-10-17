@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { MdDelete } from "react-icons/md";
+import Spinner from "./Spinner";
 
 const CategoryList = () => {
   const [categories, setCategories] = useState([]);
@@ -77,9 +78,8 @@ const CategoryList = () => {
       alert("Failed to delete the category");
     }
   };
-
   if (loading) {
-    return <p>Loading...</p>;
+    return <Spinner />;
   }
 
   if (error) {
@@ -94,7 +94,7 @@ const CategoryList = () => {
           <tr>
             <th>ID</th>
             <th>Category Name</th>
-            
+
             <th>Product Type</th>
             <th>Description</th>
             <th>Actions</th>

@@ -18,7 +18,7 @@ const Dashboard = () => {
           return;
         }
 
-        const baseURL = "http://localhost:2025";
+        const baseURL = "https://wheelhouse.onrender.com";
         const requestOptions = {
           method: "GET",
           headers: {

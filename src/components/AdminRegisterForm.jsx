@@ -42,7 +42,7 @@ const AdminRegisterForm = () => {
         setMessage("");
       }
     } catch (err) {
-      setError("An unexpected error occurred");
+      setError("An unexpected error occurred", err);
       setMessage("");
     }
   };

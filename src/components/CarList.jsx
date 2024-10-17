@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/ProductList.css";
+import Spinner from "./Spinner";
 
 const CarList = () => {
   const [cars, setCars] = useState([]);
@@ -67,8 +68,9 @@ const CarList = () => {
   const totalPages = Math.ceil(cars.length / carsPerPage);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Spinner />;
   }
+
 
   if (error) {
     return <p>Error: {error}</p>;
