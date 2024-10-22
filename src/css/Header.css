@@ -1,0 +1,35 @@
+.header{
+    margin-left: 270px;
+    background-color: #00332c;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* #f8b400 */
+.logo{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .header{
+        margin-left: 2px;
+        padding: 10px;
+        background-color: #00332c;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .logo{
+        width: 200px;
+        height: 80px;
+        object-fit: cover;
+        margin-left: 2rem;
+    }
+}

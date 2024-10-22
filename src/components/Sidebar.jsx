@@ -45,7 +45,7 @@ const Sidebar = () => {
             <li>Update Product</li>
           </Link>
           <Link to="/register" className="side-link">
-            <li>register</li>
+            <li>Register Admin</li>
           </Link>
         </ul>
       </div>

@@ -76,7 +76,6 @@ const ProductDetails = () => {
           <img
             src={product.images[currentImageIndex]}
             alt={product.item_name}
-            style={{ width: "500px", height: "350px", objectFit: "cover" }}
           />
           <button onClick={handleNextImage}>{">"}</button>
         </div>
