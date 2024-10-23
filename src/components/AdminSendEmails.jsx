@@ -38,15 +38,7 @@ const AdminSendEmail = () => {
   };
 
   return (
-    <div
-      className="email-container"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        padding: "20px",
-      }}
-    >
+    <div>
       <h2 className="email-header">Send Email to All Registered Users</h2>
       <input
         type="text"
