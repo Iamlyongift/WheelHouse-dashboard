@@ -20,6 +20,7 @@ import CarList from "./components/CarList";
 import HouseList from "./components/HouseList";
 import AdminLogin from "./components/Login";
 import AdminRegisterForm from "./components/AdminRegisterForm";
+import AdminSendEmail from "./components/AdminSendEmails";
 
 function App() {
   // Use useLocation to detect the current path
@@ -67,11 +68,20 @@ function App() {
               </PrivateRoute>
             }
           />
+          
           <Route
             path="messages"
             element={
               <PrivateRoute>
                 <Messages />
+              </PrivateRoute>
+            }
+          />
+           <Route
+            path="sendemails"
+            element={
+              <PrivateRoute>
+                <AdminSendEmail />
               </PrivateRoute>
             }
           />

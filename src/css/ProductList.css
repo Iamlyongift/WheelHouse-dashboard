@@ -40,15 +40,7 @@ body {
   }
   
   /* Action button styles */
-  button {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+ 
   .link{
     text-decoration: none;
     display: flex;

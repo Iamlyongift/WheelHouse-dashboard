@@ -10,10 +10,21 @@
 
 /* #f8b400 */
 .logo{
-    width: 200px;
+    width: 180px;
     height: 100px;
     object-fit: cover;
 }
+
+button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-: 5px;
+  }
 
 @media (max-width: 768px) {
     .header{
@@ -27,9 +38,14 @@
     }
 
     .logo{
-        width: 200px;
+        width: 150px;
         height: 80px;
         object-fit: cover;
         margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .login-btn{
+
     }
 }

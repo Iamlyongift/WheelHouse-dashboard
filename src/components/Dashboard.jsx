@@ -86,7 +86,7 @@ const Dashboard = () => {
           <Link to="/categorylist">All Categories: {categoryCount}</Link>
         </div>
         <div className="card">
-          <Link>Create an Announcement</Link>
+          <Link to="/sendemails">Create an Announcement</Link>
         </div>
       </div>
     </div>
