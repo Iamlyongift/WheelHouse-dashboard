@@ -8,8 +8,7 @@ const AdminSendEmail = () => {
   const [imageURL, setImageURL] = useState(backgroundImage); // Default image URL
   const token = localStorage.getItem("token");
 
-  const baseURL = "http://localhost:2025";
-  
+  const baseURL = "https://wheelhouse.onrender.com";
   const sendEmail = async () => {
     try {
       const response = await fetch(`${baseURL}/admin/send-email`, {
@@ -43,9 +42,9 @@ const AdminSendEmail = () => {
       className="email-container"
       style={{
         backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        padding: '20px',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "20px",
       }}
     >
       <h2 className="email-header">Send Email to All Registered Users</h2>
@@ -88,7 +87,7 @@ export default AdminSendEmail;
 //   const token = localStorage.getItem("token");
 
 //   const baseURL = "http://localhost:2025";
-  
+
 //   const sendEmail = async () => {
 //     const formData = new FormData();
 //     formData.append("subject", subject);
@@ -148,4 +147,3 @@ export default AdminSendEmail;
 // };
 
 // export default AdminSendEmail;
-
