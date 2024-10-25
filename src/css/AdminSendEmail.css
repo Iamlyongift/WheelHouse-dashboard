@@ -1,10 +1,11 @@
 /* src/components/AdminSendEmail.css */
 .email-container {
-    background-color: #f9f9f9;
+    background-color: #00332c;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 30px auto;
+    width: 1000px;
+    margin-top: 30px;
+    margin-left: 300px;
     padding: 20px;
     font-family: Arial, sans-serif;
   }
@@ -12,7 +13,7 @@
   .email-header {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #333;
+    color: #fff;
     text-align: center;
   }
   
@@ -37,7 +38,7 @@
   }
   
   .email-button {
-    background-color: #28a745; /* Bootstrap success color */
+    background-color: #28a746a7; /* Bootstrap success color */
     color: white;
     border: none;
     border-radius: 4px;
