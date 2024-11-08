@@ -17,10 +17,8 @@ const Sidebar = () => {
         <div className={isOpen ? "bar bar3 active" : "bar bar3"}></div>
       </div>
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
-       
-        <ul>
-          
-          <Link  to="/" className="side-link">
+        <ul className="list-container">
+          <Link to="/" className="side-link">
             <li>Admin dashboard</li>
           </Link>
           <Link to="/userlist" className="side-link">

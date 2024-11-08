@@ -10,7 +10,6 @@
   padding: 15px;
   transition: all 0.3s ease;
 }
-
 .sidebar h2 {
   color: white;
 }
@@ -52,7 +51,7 @@
   list-style-type: none;
   padding: 0;
 }
-.side-link{
+.side-link {
   text-decoration: none;
   color: #fff;
 }

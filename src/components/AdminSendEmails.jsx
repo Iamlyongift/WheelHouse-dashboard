@@ -1,15 +1,16 @@
 import { useState } from "react";
 import "../css/AdminSendEmail.css"; // Import the CSS file for styling
 
-
 const AdminSendEmail = () => {
   const [message, setMessage] = useState("");
-  const [subject, setSubject] = useState(""); // Default image URL
+  const [subject, setSubject] = useState("");
+  const [loading, setLoading] = useState(false); // New loading state
   const token = localStorage.getItem("token");
 
   const baseURL = "https://wheelhouse.onrender.com";
 
   const sendEmail = async () => {
+    setLoading(true); // Set loading to true when the request starts
     try {
       const response = await fetch(`${baseURL}/admin/send-email`, {
         method: "POST",
@@ -33,6 +34,8 @@ const AdminSendEmail = () => {
     } catch (error) {
       console.error("Error sending emails:", error);
       alert("Failed to send emails");
+    } finally {
+      setLoading(false); // Set loading to false when the request completes
     }
   };
 
@@ -52,9 +55,10 @@ const AdminSendEmail = () => {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
-      <button className="email-button" onClick={sendEmail}>
-        Send Emails
+      <button className="email-button" onClick={sendEmail} disabled={loading}>
+        {loading ? "Sending..." : "Send Emails"}
       </button>
+      {loading && <div className="loader"></div>} {/* Loader */}
     </div>
   );
 };
