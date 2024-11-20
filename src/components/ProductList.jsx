@@ -16,7 +16,7 @@ const ProductList = () => {
   // Fetch products when the component mounts
   useEffect(() => {
     const fetchProducts = async () => {
-      const baseURL = "https://wheelhouse.onrender.com";
+      const baseURL = "https://api.cribsandrides.com";
       try {
         const token = localStorage.getItem("token");
 
@@ -43,7 +43,7 @@ const ProductList = () => {
 
   // Function to delete a product
   const handleDelete = async (id) => {
-    const baseURL = "https://wheelhouse.onrender.com";
+    const baseURL = "https://api.cribsandrides.com";
     try {
       const token = localStorage.getItem("token");
 

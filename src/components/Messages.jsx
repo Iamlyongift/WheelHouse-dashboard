@@ -7,7 +7,7 @@ const Messages = () => {
 
   useEffect(() => {
     const fetchMessages = async () => {
-      const baseUrl = "https://wheelhouse.onrender.com";
+      const baseUrl = "https://api.cribsandrides.com";
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(`${baseUrl}/product/contact/messages`, {
@@ -17,11 +17,11 @@ const Messages = () => {
             "Content-Type": "application/json",
           },
         });
-  
+
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-  
+
         const data = await response.json();
         console.log("Fetched data:", data);
         setMessages(data.data || []); // Set the correct data field here
@@ -31,10 +31,9 @@ const Messages = () => {
         setLoading(false);
       }
     };
-  
+
     fetchMessages();
   }, []);
-  
 
   console.log("Messages in render:", messages); // Log messages to check if state updates
   console.log("Loading status:", loading); // Log the loading status
@@ -42,7 +41,6 @@ const Messages = () => {
   if (loading) {
     return <Spinner />;
   }
-
 
   return (
     <div>

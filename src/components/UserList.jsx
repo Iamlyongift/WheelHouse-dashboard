@@ -12,7 +12,7 @@ const UserList = () => {
 
   useEffect(() => {
     const fetchUsers = async (page) => {
-      const baseURL = "https://wheelhouse.onrender.com";
+      const baseURL = "https://api.cribsandrides.com";
       try {
         const token = localStorage.getItem("token");
 
@@ -51,7 +51,7 @@ const UserList = () => {
 
   // Function to toggle user status
   const toggleUserStatus = async (userID, currentStatus) => {
-    const baseURL = "https://wheelhouse.onrender.com";
+    const baseURL = "https://api.cribsandrides.com";
     try {
       const token = localStorage.getItem("token");
 
@@ -139,13 +139,19 @@ const UserList = () => {
 
       {/* Pagination Controls */}
       <div className="pagination">
-        <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
+        <button
+          onClick={() => handlePageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+        >
           Previous
         </button>
         <span>
           Page {currentPage} of {totalPages}
         </span>
-        <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}>
+        <button
+          onClick={() => handlePageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+        >
           Next
         </button>
       </div>

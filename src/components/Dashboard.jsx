@@ -18,7 +18,7 @@ const Dashboard = () => {
           return;
         }
 
-        const baseURL = "https://wheelhouse.onrender.com";
+        const baseURL = "https://api.cribsandrides.com";
         const requestOptions = {
           method: "GET",
           headers: {

@@ -7,7 +7,7 @@ const AdminSendEmail = () => {
   const [loading, setLoading] = useState(false); // New loading state
   const token = localStorage.getItem("token");
 
-  const baseURL = "https://wheelhouse.onrender.com";
+  const baseURL = "https://api.cribsandrides.com";
 
   const sendEmail = async () => {
     setLoading(true); // Set loading to true when the request starts

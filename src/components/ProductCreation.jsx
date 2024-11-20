@@ -14,7 +14,7 @@ const CreateCategoryAndProduct = () => {
   const [productStock, setProductStock] = useState("");
   const [productImages, setProductImages] = useState([]);
   const [error, setError] = useState(null);
-  const baseUrl = "https://wheelhouse.onrender.com";
+  const baseUrl = "https://api.cribsandrides.com";
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -132,8 +132,18 @@ const CreateCategoryAndProduct = () => {
   };
 
   const inputStyle = { padding: "10px", margin: "10px 0", width: "100%" };
-  const labelStyle = { display: "block", marginBottom: "5px", fontWeight: "bold" };
-  const buttonStyle = { padding: "10px 20px", backgroundColor: "#ff6b6b", color: "#fff", border: "none", cursor: "pointer" };
+  const labelStyle = {
+    display: "block",
+    marginBottom: "5px",
+    fontWeight: "bold",
+  };
+  const buttonStyle = {
+    padding: "10px 20px",
+    backgroundColor: "#ff6b6b",
+    color: "#fff",
+    border: "none",
+    cursor: "pointer",
+  };
 
   return (
     <div>

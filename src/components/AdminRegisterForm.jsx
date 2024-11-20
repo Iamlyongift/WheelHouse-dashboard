@@ -20,7 +20,7 @@ const AdminRegisterForm = () => {
     });
   };
 
-  const baseURL = "https://wheelhouse.onrender.com";
+  const baseURL = "https://api.cribsandrides.com";
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
