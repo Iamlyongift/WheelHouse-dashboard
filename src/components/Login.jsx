@@ -15,7 +15,7 @@ export default function AdminLogin() {
     e.preventDefault(); // Prevent form from refreshing the page
     setLoading(true); // Set loading to true when submitting
 
-    const baseUrl = "https://wheelhouse.onrender.com";
+    const baseUrl = "https://api.cribsandrides.com";
     try {
       const response = await fetch(`${baseUrl}/admin/adminLogin`, {
         method: "POST",

@@ -12,7 +12,7 @@ const HouseList = () => {
   // Fetch houses when the component mounts
   useEffect(() => {
     const fetchHouses = async () => {
-      const baseURL = "https://wheelhouse.onrender.com";
+      const baseURL = "https://api.cribsandrides.com";
       try {
         const token = localStorage.getItem("token");
 
@@ -54,7 +54,6 @@ const HouseList = () => {
     return <Spinner />;
   }
 
-
   if (error) {
     return <p>Error: {error}</p>;
   }
@@ -93,7 +92,11 @@ const HouseList = () => {
                     <img
                       src={house.images[0]}
                       alt={house.productName}
-                      style={{ width: "180px", height: "80px", objectFit: "cover" }}
+                      style={{
+                        width: "180px",
+                        height: "80px",
+                        objectFit: "cover",
+                      }}
                     />
                   )}
                 </td>
