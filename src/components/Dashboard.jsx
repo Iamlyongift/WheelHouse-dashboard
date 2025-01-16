@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "../css/Dashboard.css"; 
+import "../css/Dashboard.css";
 
 const Dashboard = () => {
   const [userCount, setUserCount] = useState(0);
