@@ -1,51 +1,51 @@
-.header{
-    margin-left: 270px;
-    background-color: #00332c;
-    padding: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
+.header {
+  margin-left: 270px;
+  background-color: #00332c;
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
 }
 
-
-.logo{
-    width: 180px;
-    height: 100px;
-    object-fit: cover;
+.logo {
+  width: 180px;
+  height: 100px;
+  object-fit: cover;
 }
 
 button {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 5px;
-  }
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px;
+}
+
+.login-btn .links {
+  text-decoration: none;
+  color: #fff;
+}
 
 @media (max-width: 768px) {
-    .header{
-        margin-left: 2px;
-        padding: 10px;
-        background-color: #00332c;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 5px;
-    }
+  .header {
+    margin-left: 2px;
+    padding-right: 15px;
+    background-color: #00332c;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+  }
 
-    .logo{
-        width: 150px;
-        height: 80px;
-        object-fit: cover;
-        margin-left: 2rem;
-        margin-top: 1rem;
-    }
-
-    .login-btn{
-
-    }
+  .logo {
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
 }

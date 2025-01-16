@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "../css/Header.css"
+import "../css/Header.css";
 import Logo from "../assets/images/logo_update.png";
+
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
@@ -21,8 +22,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="user-info">
-        <img src={Logo}  alt="logo" className="logo"/>
+        <img src={Logo} alt="logo" className="logo" />
       </div>
+
       <div className="control-buttons">
         {isLoggedIn ? (
           <button className="logout-btn" onClick={handleLogout}>
@@ -30,7 +32,9 @@ const Header = () => {
           </button>
         ) : (
           <button className="login-btn">
-            <Link to="/login">Log in</Link>
+            <Link className="links" to="/login">
+              Log in
+            </Link>
           </button>
         )}
       </div>

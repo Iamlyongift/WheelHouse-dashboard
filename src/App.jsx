@@ -68,7 +68,7 @@ function App() {
               </PrivateRoute>
             }
           />
-          
+
           <Route
             path="messages"
             element={
@@ -77,7 +77,7 @@ function App() {
               </PrivateRoute>
             }
           />
-           <Route
+          <Route
             path="sendemails"
             element={
               <PrivateRoute>
