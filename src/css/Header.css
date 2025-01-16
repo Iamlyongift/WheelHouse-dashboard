@@ -30,6 +30,20 @@ button {
   color: #fff;
 }
 
+/* Add these styles to your Sidebar.css file */
+
+/* Hamburger icon color */
+.hamburger svg {
+  color: #fff; /* Change this to any color you want */
+}
+
+/* Close button color */
+.close-btn svg {
+  color: #fff; /* This will make it visible against the dark sidebar */
+}
+
+/* Optional: Change color on hover */
+
 @media (max-width: 768px) {
   .header {
     margin-left: 2px;
